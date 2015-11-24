@@ -97,6 +97,8 @@ a {
   font-size: 18px;
   color: #f3f3f3;
   line-height: 30px;
+  margin-top: 20px;
+  padding-top:10px;
 }
 
 #skills-h3 {
@@ -157,10 +159,10 @@ ul {
   border: 2px solid #000;
 }
 
-#topContacts {
+/*#topContacts {
   list-style-type: none;
   float: right;
-  display:inline;
+  display:inline;*/
 
 }
 
