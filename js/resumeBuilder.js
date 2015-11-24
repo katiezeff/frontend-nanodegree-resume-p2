@@ -123,6 +123,8 @@ education.display = function() {
         $(".education-entry:last").append(formattedOnlinecourseTitle);
         var formattedDates = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
         $(".education-entry:last").append(formattedDates);
+        var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[course].url);
+        $(".education-entry:last").append(formattedURL);
 
     }
 };
@@ -173,14 +175,14 @@ work.display = function() {
 }
 
 
-function locationizer(work_obj) {
-    var locations = [];
-    for (var job in work_obj.jobs) {
-        var newLocation = work_obj.jobs[job].location;
-        locationArray.push(newlocation);
-    }
-    return locationArray;
-}
+//function locationizer(work_obj) {
+    //var locations = [];
+    //for (var job in work_obj.jobs) {
+        //var newLocation = work_obj.jobs[job].location;
+        //locationArray.push(newlocation);
+    //}
+    //return locationArray;
+//}
 
 
 
@@ -272,19 +274,19 @@ $("#main").append(education.name);
 
 */
 
-var map;
+//var map;
 
-function initMap() {
-    map = new google.maps.Map(document.getElementById('mapDiv'), {
-        center: {
-            lat: -34.397,
-            lng: 150.644
-        },
+//function initMap() {
+    //map = new google.maps.Map(document.getElementById('mapDiv'), {
+        //center: {
+            //lat: -34.397,
+            //lng: 150.644
+        //},
   
-        zoom: 8
-    });
+        //zoom: 8
+    //});
 
-}
+//}
 $("#mapDiv").append(googleMap);
 
 
