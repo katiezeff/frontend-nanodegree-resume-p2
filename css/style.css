@@ -175,6 +175,10 @@ span {
   padding: 5px;
 }
 
+#mapDiv iframe {
+  padding-left: 5%;
+}
+
 #lets-connect {
   text-align: center;
 }

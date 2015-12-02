@@ -287,6 +287,6 @@ $("#main").append(education.name);
     //});
 
 //}
-$("#mapDiv").append(googleMap);
+//$("#map").append(googleMap);
 
 
