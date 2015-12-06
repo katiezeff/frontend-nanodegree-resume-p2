@@ -42,7 +42,7 @@ var HTMLonlineDates = '<div class="date-text">%data%</div>';
 var HTMLonlineURL = '<br><a href="#">%data%</a><br/>';
 
 var internationalizeButton = '<button>Internationalize</button>';
-var googleMap = '<div id="#map"></div>';
+var googleMap = '<div id="mapDiv"></div>';
 
 
 /*
@@ -99,7 +99,7 @@ function initializeMap() {
   For the map to be displayed, the googleMap var must be
   appended to #mapDiv in resumeBuilder.js. 
   */
-  map = new google.maps.Map(document.querySelector('#map'), mapOptions);
+  map = new google.maps.Map(document.querySelector('#mapDiv'), mapOptions);
 
 
   /*
@@ -228,4 +228,6 @@ window.addEventListener('load', initializeMap);
 window.addEventListener('resize', function(e) {
   //Make sure the map bounds get updated on page resize
  map.fitBounds(mapBounds);
+
 });
+

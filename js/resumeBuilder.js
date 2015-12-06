@@ -74,14 +74,14 @@ bio.display();
 var education = {
     "schools": [{
         "name": "UC, Santa Barbara",
-        "locations": "Santa Barbara, CA",
+        "location": "Santa Barbara, CA",
         "degree": "Bachelor of Arts",
         "majors": ["Communication", " Global Studies"],
         "dates": 2013,
         "url": "http://www.ucsb.edu/"
     }, {
         "name": "Santa Barbara City College",
-        "locations": "Santa Barbara, CA",
+        "location": "Santa Barbara, CA",
         "degree": "Professional Certificate",
         "majors": "Web Design",
         "dates": 2014,
@@ -101,7 +101,7 @@ education.display = function() {
     for (var school in education.schools) {
         $("#education").append(HTMLschoolStart);
         var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
-        var formattedCity = HTMLschoolLocation.replace("%data%", education.schools[school].locations);
+        var formattedCity = HTMLschoolLocation.replace("%data%", education.schools[school].location);
         var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
         var formattedMajors = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
         var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
@@ -137,19 +137,19 @@ var work = {
     "jobs": [{
         "employer": "cielo24",
         "title": "Crowd Operations Manager",
-        "location": "Santa Barbara, CA",
+        "location": "3412 State Street Santa Barbara, CA",
         "dates": "October 2013 - present",
         "description": "Crowd sourcing, customer service, and marketing specialist."
     }, {
         "employer": "UCSB Conference Services",
         "title": "Conference Coordinator",
-        "location": "Santa Barbara, CA",
+        "location": "1501 Residential Services, UCSB",
         "dates": "March 2013 - October 2013",
         "description": "Summer conference coordinator for UCSB visitors. Managed Academic, athletic, family, religious, <br/>and professional conferences with a variety of clients and guests."
     }, {
-        "employer": "UCSB Housing and Residential Services",
+        "employer": "Housing and Residential Services",
         "title": "RHA Vice President",
-        "location": "Santa Barbara, CA",
+        "location": "1501 Residential Services, UCSB",
         "dates": "June 2010 - June 2012",
         "description": "Event Coordination and Office Administration for Residence Halls Association student goverment organization."
     }]
